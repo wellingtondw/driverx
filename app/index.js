@@ -10,4 +10,4 @@ import Type from './src/pages/Steps/Type';
 import Car from './src/pages/Steps/Car';
 import Payment from './src/pages/Steps/Payment';
 
-AppRegistry.registerComponent(appName, () => Car);
+AppRegistry.registerComponent(appName, () => Payment);
