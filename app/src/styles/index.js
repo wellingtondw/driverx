@@ -87,3 +87,14 @@ export const Spacer = styled.View`
     height: ${height ? height + 'px' : '10px'};
   `}
 `;
+
+export const AddressList = styled.FlatList`
+  flex: 1;
+  width: 100%;
+  padding-top: 10px;
+`;
+
+export const AddressItem = styled.TouchableOpacity`
+  padding: 5px 0;
+  align-items: flex-start;
+`;

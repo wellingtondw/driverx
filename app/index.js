@@ -9,5 +9,6 @@ import Login from './src/pages/Login';
 import Type from './src/pages/Steps/Type';
 import Car from './src/pages/Steps/Car';
 import Payment from './src/pages/Steps/Payment';
+import Ride from './src/pages/Ride';
 
-AppRegistry.registerComponent(appName, () => Payment);
+AppRegistry.registerComponent(appName, () => Ride);
