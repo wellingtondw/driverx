@@ -44,3 +44,32 @@ export const ButtonText = styled.Text`
     color: ${color ? colors[color] : colors.black};
   `}
 `;
+
+export const Title = styled.Text`
+  font-size: 20px;
+  color: ${colors.dark};
+  font-weight: bold;
+`;
+
+export const SubTitle = styled.Text`
+  ${({small, bold, color}) => css`
+    font-size: ${small ? '12px' : '15px'};
+    opacity: 0.7;
+    font-weight: ${bold ? 'bold' : 'normal'};
+    color: ${color ? colors[color] : colors.dark};
+  `}
+`;
+
+export const PickerButton = styled.TouchableOpacity`
+  ${({active}) => css`
+    width: 100%;
+    height: 40%;
+    margin-top: 2.5%;
+    border-width: 3px;
+    border-style: solid;
+    justify-content: space-around;
+    align-items: center;
+    border-color: ${active ? colors.primary : colors.muted50};
+    background: ${active ? colors.primary + '80' : colors.muted50};
+  `}
+`;
