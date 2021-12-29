@@ -73,3 +73,17 @@ export const PickerButton = styled.TouchableOpacity`
     background: ${active ? colors.primary + '80' : colors.muted50};
   `}
 `;
+
+export const Input = styled.TextInput`
+  background-color: ${colors.light};
+  border: 1px solid ${colors.muted};
+  width: 100%;
+  padding: 7px 15px;
+`;
+
+export const Spacer = styled.View`
+  ${({width, height}) => css`
+    width: ${width ? width + 'px' : '100%'};
+    height: ${height ? height + 'px' : '10px'};
+  `}
+`;
