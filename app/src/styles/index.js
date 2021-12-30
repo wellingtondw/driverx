@@ -1,4 +1,7 @@
 import styled, {css} from 'styled-components/native';
+import MapView from 'react-native-maps';
+import Pulse from 'react-native-pulse';
+
 import {colors} from './theme';
 
 export const Container = styled.View`
@@ -98,3 +101,44 @@ export const AddressItem = styled.TouchableOpacity`
   padding: 5px 0;
   align-items: flex-start;
 `;
+
+export const Map = styled(MapView)`
+  ${({disabled}) => css`
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    opacity: ${disabled ? 0.4 : 1};
+  `}
+`;
+
+export const Avatar = styled.Image.attrs({
+  elevation: 50,
+})`
+  ${({small}) => css`
+    width: ${small ? '35px' : '50px'};
+    height: ${small ? '35px' : '50px'};
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    background: ${colors.muted};
+    border-radius: ${small ? '35px' : '50px'};
+  `}
+`;
+
+export const VerticalSeparator = styled.View`
+  width: 1px;
+  height: 100%;
+  background: ${colors.muted};
+`;
+
+export const Bullet = styled.View`
+  ${({destination}) => css`
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    margin-top: 4px;
+    background: ${destination ? '#ff2929' : '#00eb5e'};
+  `}
+`;
+
+export const PulseCircle = styled(Pulse).attrs({
+  color: colors.primary,
+})``;
