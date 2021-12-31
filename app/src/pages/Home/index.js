@@ -181,7 +181,7 @@ const Home = () => {
                     <SubTitle bold>Wellington (2km)</SubTitle>
                     <Container height={40} style={{paddingRight: 14}}>
                       <Container row justify="flex-start">
-                        <Bullet destination style={{marginRight: 4}} />
+                        <Bullet style={{marginRight: 4}} />
                         <SubTitle numberOfLines={1} small>
                           Endereço de embarque completo
                         </SubTitle>
