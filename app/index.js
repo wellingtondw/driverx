@@ -7,17 +7,11 @@ import {name as appName} from './app.json';
 
 import {Provider} from 'react-redux';
 import store from './src/store';
-
-import Login from './src/pages/Login';
-import Type from './src/pages/Steps/Type';
-import Car from './src/pages/Steps/Car';
-import Payment from './src/pages/Steps/Payment';
-import Ride from './src/pages/Ride';
-import Home from './src/pages/Home';
+import Routes from './src/routes';
 
 const app = () => (
   <Provider store={store}>
-    <Home />
+    <Routes />
   </Provider>
 );
 
